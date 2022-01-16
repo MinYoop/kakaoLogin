@@ -24,7 +24,7 @@
 			<tr>
 
 				<td><input type="button" value="로그아웃"
-					onclick="location.href='delete.do?id=${dto.id}' "></td>
+					onclick="location.href='https://kauth.kakao.com/oauth/logout?client_id=cacd5231c6e9a148742b217941190c01&logout_redirect_uri=http://localhost:8787/kakaologin/rest.do'"></td>
 
 			</tr>
 		</table>
