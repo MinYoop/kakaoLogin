@@ -28,7 +28,7 @@
 	// Auth.authorize 함수로 서버에서 리다이렉트 받아서 인가코드로 accessToken을 발급 받고 페이지로 전달해서 자바스크립트 api로 사용자 정보 받아오기!
   function loginWithKakao() {
     Kakao.Auth.authorize({
-      redirectUri: 'http://localhost:8787/kakaologin/kakaologin.do',
+      redirectUri: 'http://3.210.71.242:8080/KaKaoLogin/kakaologin.do',
       state: "javascript"
     })
   }

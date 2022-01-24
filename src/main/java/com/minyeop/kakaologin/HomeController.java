@@ -113,7 +113,8 @@ public class HomeController {
 			sb.append("grant_type=authorization_code");
 
 			sb.append("&client_id=cacd5231c6e9a148742b217941190c01"); // 본인이 발급받은 key
-			sb.append("&redirect_uri=http://localhost:8787/kakaologin/kakaologin.do"); // 본인이 설정한 주소
+			//sb.append("&redirect_uri=http://localhost:8787/kakaologin/kakaologin.do"); // 본인이 설정한 주소  밑에 aws용
+			sb.append("&redirect_uri=http://3.210.71.242:8080/KaKaoLogin/kakaologin.do");
 
 			sb.append("&code=" + authorize_code);
 			bw.write(sb.toString());
